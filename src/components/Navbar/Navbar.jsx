@@ -45,6 +45,7 @@ const Navbar = () => {
           <button className="rate-now">Rate Now</button>
           <button className="sign-in"> + Contribute</button>
           <button className="join-now">Join Now</button>
+          <button className="login">Login</button>
         </div>
       </div>
 
