@@ -1,0 +1,100 @@
+/* General Styles for the Homepage */
+.homepage {
+    margin-top: 70px;
+    /* padding: 20px; */
+    width: 100vw;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #0073b1; /* LinkedIn blue */
+    color: white;
+    width: 100;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .explore-button {
+    background-color: #ff4081; /* AmbitionBox pink */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .explore-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Features Section */
+  .features {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    color: #555;
+  }
+  
