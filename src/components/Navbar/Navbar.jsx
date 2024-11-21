@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="top-row">
-        <div className="logo">MySite</div>
+        <div className="logo">My <span className="logo-span">Site</span></div>
 
         <div className="icon-section">
           <div className="icon">
@@ -39,6 +39,9 @@ const Navbar = () => {
             <AiFillBug className="icon-svg" />
             <span>Games</span>
           </div>
+          <div className="line-break">
+            <span>|</span>
+          </div>
         </div>
 
         <div className="right-section">
@@ -50,18 +53,38 @@ const Navbar = () => {
       </div>
 
       <div className="second-row">
-        <button className="hamburger-menu" onClick={toggleMenu} aria-label="Toggle Menu">
+        <button
+          className="hamburger-menu"
+          onClick={toggleMenu}
+          aria-label="Toggle Menu"
+        >
           ☰
         </button>
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Communities</a></li>
-          <li><a href="#">Companies</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Salaries</a></li>
-          <li><a href="#">Interviews</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Awards</a></li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Communities</a>
+          </li>
+          <li>
+            <a href="#">Companies</a>
+          </li>
+          <li>
+            <a href="#">Reviews</a>
+          </li>
+          <li>
+            <a href="#">Salaries</a>
+          </li>
+          <li>
+            <a href="#">Interviews</a>
+          </li>
+          <li>
+            <a href="#">Jobs</a>
+          </li>
+          <li>
+            <a href="#">Awards</a>
+          </li>
         </ul>
       </div>
     </nav>

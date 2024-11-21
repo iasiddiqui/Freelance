@@ -1,67 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .icon-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .icon-svg {
-    font-size: 1.5rem;
-    color: #0073b1;
-  }
-  
-  .icon span {
-    margin-top: 5px;
-    font-size: 0.8rem;
-    color: #333;
-  }
-  
-  .right-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  button {
-    border: none;
-    padding: 8px 15px;
-    margin-left: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    height: 40px;
-  }
-  
-  .rate-now {
-    background-color: #ff4081;
-    color: white;
-  }
-  
-  .sign-in {
-    background-color: #e1e1e1;
-    color: #333;
-  }
-  
-  .join-now {
-    background-color: #0073b1;
-    color: white;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -71,30 +13,67 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-  }
-  
-  .top-row {
+}
+
+.top-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0;
     height: 60px;
-  }
-  
-  .logo {
+    width: 100%;
+}
+
+.logo {
     margin-left: 2.2rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: #0073b1;
-  }
-  
-  .right-section {
+}
+.logo-span{
+    color: #ff4081;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
+    flex-grow: 1;
+    /* This allows the icon-section to take available space */
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-svg {
+    font-size: 1.5rem;
+    color: #0073b1;
+}
+
+.icon span {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #333;
+}
+.line-break{
+    font-size: 2rem;
+    color: #0073b1;
+}
+
+.right-section {
     display: flex;
     align-items: center;
-    height: 100%;
-  }
-  
-  button {
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+button {
     border: none;
     padding: 8px 15px;
     margin-left: 10px;
@@ -102,43 +81,44 @@ body {
     cursor: pointer;
     font-size: 0.9rem;
     height: 40px;
-  }
-  
-  .rate-now {
+}
+
+.rate-now {
     background-color: #ff4081;
     color: white;
-  }
-  
-  .sign-in {
+}
+
+.sign-in {
     background-color: #e1e1e1;
     color: #333;
-  }
-  
-  .join-now {
+}
+
+.join-now {
     background-color: #0073b1;
     color: white;
-  }
-  .login {
-    background-color:#fff;
+}
+
+.login {
+    background-color: #fff;
     color: #000;
     border: 1px solid #0073b1;
     border-radius: 50px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     opacity: 0.8;
-  }
-  
-  .second-row {
+}
+
+.second-row {
     display: flex;
     flex-direction: column;
     align-items: left;
     height: 25px;
     margin-left: 2.1rem;
     padding: 0;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
     list-style: none;
     margin: 0;
@@ -146,62 +126,61 @@ body {
     justify-content: left;
     width: 100%;
     align-items: center;
-  }
-  
-  .nav-links li {
+}
+
+.nav-links li {
     margin: 0 10px;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: #333;
     font-size: 1rem;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #0073b1;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .nav-links {
-      display: none; 
-      flex-direction: column;
-      width: 100%;
-      background-color: #f8f9fa;
-      position: absolute;
-      top: 7rem;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 7rem;
     }
-  
+
     .nav-links.open {
-      display: flex;
+        display: flex;
     }
-  
+
     .hamburger-menu {
-     background: #000;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
+        background: #000;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
-  
+
     .right-section {
-      display: none; 
+        display: none;
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .hamburger-menu {
-      display: none; 
+        display: none;
     }
-  
+
     .nav-links {
-      display: flex;
-      flex-direction: row;
-      position: static;
-      background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
     }
-  
+
     .nav-links li {
-      margin: 0 20px;
+        margin: 0 20px;
     }
-  }
-  
+}
