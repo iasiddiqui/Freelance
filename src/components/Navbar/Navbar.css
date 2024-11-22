@@ -26,14 +26,16 @@ body {
 
 .logo {
     margin-left: 2.2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0073b1;
+    width: 8rem;
     cursor: pointer;
-}
-.logo-span{
-    color: #ff4081;
-}
+  }
+  
+  .logo img {
+    width: 100%; /* Makes the image fill the div width */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+
 
 .icon-section {
     display: flex;
@@ -97,7 +99,9 @@ body {
 } */
 
 .rate-now {
-    background-color: #ff4081;
+    background-color:#0073b1;
+    border-radius: 10px;
+    border: none;
     color: white;
     width: 6rem;
     padding: 0.5rem;
@@ -133,7 +137,8 @@ body {
     /* background-color: #0073b1; */
     background-color: #fff;
     color: #000;
-    /* border: 1px solid #0073b1; */
+    border: none;
+    padding: 0.5rem;
     border-radius: 50px;
     transition: color 0.3s ease-in;
 
@@ -149,6 +154,7 @@ body {
     background-color: #fff;
     color: #0073b1;
     border: 1px solid #0073b1;
+    padding: 0.5rem;
     border-radius: 50px;
     transition: color 0.3s ease-in;
 
@@ -165,7 +171,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    height: 37px;
+    height: 33px;
     /* margin-left: 1.6rem; */
     padding: 0.5rem 0;
     background-color: #c4ecff84;
@@ -198,6 +204,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .second-row{
+        padding: 0;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -212,10 +222,10 @@ body {
     }
 
     .hamburger-menu {
-        background: #000;
         border: none;
         font-size: 1.5rem;
         cursor: pointer;
+        align-items: left;
     }
 
     .right-section {
