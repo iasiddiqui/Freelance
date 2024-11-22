@@ -45,8 +45,8 @@ const Navbar = () => {
         </div>
 
         <div className="right-section">
-          <button className="rate-now">Rate Now</button>
-          <button className="sign-in"> + Contribute</button>
+          {/* <button className="rate-now">Rate Now</button>
+          <button className="sign-in"> + Contribute</button> */}
           <button className="join-now">Join Now</button>
           <button className="login">Login</button>
         </div>
@@ -85,6 +85,7 @@ const Navbar = () => {
           <li>
             <a href="#">Awards</a>
           </li>
+          <button className="rate-now">Rate Now</button>
         </ul>
       </div>
     </nav>
