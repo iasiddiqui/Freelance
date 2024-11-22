@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    /* font-family: santoshi, sans-serif; */
 }
 
 .navbar {
@@ -50,10 +50,12 @@ body {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.icon-svg {
-    font-size: 1.5rem;
+.icon:hover span,
+.icon:hover .icon-svg,
+.icon span:hover {
     color: #0073b1;
 }
 
@@ -61,13 +63,15 @@ body {
     margin-top: 5px;
     font-size: 0.8rem;
     color: #333;
+    transition: color 0.3s ease;
 }
-.icon span:hover{
-    color: #0073b1; 
+
+.icon-svg {
+    font-size: 1.5rem;
+    color: #0073b1;
+    transition: color 0.3s ease;
 }
-.icon:hover{
-    color: #0073b1; 
-}
+
 .line-break{
     font-size: 2rem;
     color: #0073b1;
@@ -105,15 +109,19 @@ body {
 }
 
 .join-now {
-    background-color: #0073b1;
-    color: white;
-    border: 1px solid #0073b1;
+    /* background-color: #0073b1; */
+    background-color: #fff;
+    color: #000;
+    /* border: 1px solid #0073b1; */
     border-radius: 50px;
+    transition: color 0.3s ease-in;
+
     
 }
 .join-now:hover{
-    background-color: #fff ;
-    color: #0073b1;
+    background-color: #bebebed9 ;
+    /* color: #0073b1; */
+    
 }
 
 .login {
@@ -121,10 +129,11 @@ body {
     color: #0073b1;
     border: 1px solid #0073b1;
     border-radius: 50px;
+    transition: color 0.3s ease-in;
+
 }
 .login:hover{
-    background-color:  #0073b1;
-    color: #fff;
+    background-color:  #00a6ff22;
 }
 
 /* button:hover {
@@ -135,9 +144,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    height: 40px;
-    margin-left: 1.6rem;
-    padding: 0;
+    height: 37px;
+    /* margin-left: 1.6rem; */
+    padding: 0.5rem 0;
+    background-color: #c4ecff84;
 }
 
 .nav-links {
@@ -148,6 +158,8 @@ body {
     justify-content: left;
     width: 100%;
     align-items: center;
+    margin-left: 1.6rem;
+
 }
 
 .nav-links li {
