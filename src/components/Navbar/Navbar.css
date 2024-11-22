@@ -103,6 +103,27 @@ body {
     padding: 0.5rem;
 }
 
+/* .rate-now {
+    background: linear-gradient(to right, #ff4081, #ff79b0);
+    color: white;
+    width: 6.7rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 10px; 
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 64, 129, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rate-now:hover {
+    box-shadow: 0px 6px 15px rgba(255, 64, 129, 0.5); 
+    background: linear-gradient(to right, #ff79b0, #ff4081); 
+} */
+
+
 .sign-in {
     background-color: #e1e1e1;
     color: #333;
