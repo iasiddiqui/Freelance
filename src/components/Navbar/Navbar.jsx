@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="top-row">
-        <div className="logo"><img src="/public/Logo.png" alt="Logo" />
+        <div className="logo"><img src="/Logo.png" alt="Logo" />
          </div>
 
         <div className="icon-section">
