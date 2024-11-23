@@ -24,7 +24,6 @@
     background-image: url('/hero.jpg'); 
     background-size: cover;
     background-position: center;
-    /* filter: blur(8px);  */
     z-index: -1; 
   }
 
@@ -35,7 +34,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.786); /* Dark overlay with transparency */
+    background-color: rgba(0, 0, 0, 0.786); 
     z-index: -1; 
   }
   /* Main title */
@@ -54,7 +53,7 @@
   }
   
   /* Card styling */
-  .card {
+  .card-hero1 {
     background-color: rgba(14, 130, 246, 0.7);
     padding: 1.5rem;
     border-radius: 10px;
@@ -74,17 +73,17 @@
     color: white; */
   }
   
-  .card h3 {
+  .card-hero1 h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   
-  .card p {
+  .card-hero1 p {
     font-size: 1rem;
     line-height: 1.5;
   }
   
-  .card button {
+  .card-hero1 button {
     display: flex;
     align-items: center; 
     gap: 8px;
@@ -100,7 +99,7 @@
     margin: auto; /* Aligns the button to the right */
   }
   
-  .card button:hover {
+  .card-hero1 button:hover {
     color:  #F3747B;
   }
   

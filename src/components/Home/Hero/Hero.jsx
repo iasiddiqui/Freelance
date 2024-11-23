@@ -9,7 +9,7 @@ const HomePage = () => {
       <h1>JOBBLISS</h1>
       <div className="cards-container">
         {/* Discover Section */}
-        <div className="card">
+        <div className="card-hero1">
           <h3>Discover </h3>
           <p>
             Embark on your career journey with jobbliss, where opportunities
@@ -19,7 +19,7 @@ const HomePage = () => {
         </div>
 
         {/* Connect Section */}
-        <div className="card card1">
+        <div className="card-hero1 card1">
           <h3>Connect</h3>
           <p>
             Build your professional network and unlock new career possibilities
@@ -29,7 +29,7 @@ const HomePage = () => {
         </div>
 
         {/* Explore Section */}
-        <div className="card">
+        <div className="card-hero1">
           <h3>Explore</h3>
           <p>
             Dive into a wealth of job listings while gaining insights into the

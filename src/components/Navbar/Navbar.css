@@ -31,8 +31,8 @@ body {
   }
   
   .logo img {
-    width: 100%; /* Makes the image fill the div width */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
   
 
@@ -44,7 +44,7 @@ body {
     gap: 20px;
     margin-left: 10px;
     flex-grow: 1;
-    /* This allows the icon-section to take available space */
+   
 }
 
 .icon {
