@@ -121,6 +121,7 @@ const Navbar = () => {
             </ul>
           </li>
           <button className="rate-now">Rate Now</button>
+        <span>For Employers</span>
         </ul>
       </div>
     </nav>
