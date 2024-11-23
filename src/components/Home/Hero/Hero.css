@@ -1,0 +1,106 @@
+
+.hero {
+    position: relative; 
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(8px);  */
+    z-index: -1; 
+  }
+
+  .hero::after {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.786); /* Dark overlay with transparency */
+    z-index: -1; 
+  }
+  /* Main title */
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Card container */
+  .cards-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: rgba(14, 130, 246, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+    color: white;
+    display: flex; /* Set the card to use flexbox */
+    flex-direction: column; /* Ensure items stack vertically */
+    justify-content: space-between; /* Ensure space between title, text, and button */
+  }
+  .card1 {
+    background-color: rgba(79, 167, 255, 0.7); 
+    /* padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+    color: white; */
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .card button {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(79, 167, 255, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: auto; /* Aligns the button to the right */
+  }
+  
+  .card button:hover {
+    color:  #F3747B;
+  }
+  

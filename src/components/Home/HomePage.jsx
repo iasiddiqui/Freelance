@@ -45,29 +45,43 @@
 // export default HomePage;
 
 
-import React from 'react';
-import './HomePage.css';
-import Card from '../Cards/Card';
+// import React from 'react';
+// import './HomePage.css';
+// import Card from '../Cards/Card';
+
+// const HomePage = () => {
+//     return (
+//         <div className="home">
+//             <div className="hero-section">
+//                 <h1>Discover Companies, Find Jobs, Get Insights.</h1>
+//                 <p>Your career journey begins here!</p>
+//                 <button className="hero-button">Start Exploring</button>
+//             </div>
+
+//             <div className="card-section">
+//                 <h2>Top Companies</h2>
+//                 <div className="card-container">
+//                     <Card title="Google" description="Explore salaries, reviews, and jobs at Google." />
+//                     <Card title="Amazon" description="Discover Amazon's culture, jobs, and pay scale." />
+//                     <Card title="Microsoft" description="Learn about careers and reviews at Microsoft." />
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default HomePage;
+
+
+import React from 'react'
+import Hero from './Hero/Hero'
 
 const HomePage = () => {
-    return (
-        <div className="home">
-            <div className="hero-section">
-                <h1>Discover Companies, Find Jobs, Get Insights.</h1>
-                <p>Your career journey begins here!</p>
-                <button className="hero-button">Start Exploring</button>
-            </div>
+  return (
+    <>
+    <Hero />
+    </>
+  )
+}
 
-            <div className="card-section">
-                <h2>Top Companies</h2>
-                <div className="card-container">
-                    <Card title="Google" description="Explore salaries, reviews, and jobs at Google." />
-                    <Card title="Amazon" description="Discover Amazon's culture, jobs, and pay scale." />
-                    <Card title="Microsoft" description="Learn about careers and reviews at Microsoft." />
-                </div>
-            </div>
-        </div>
-    );
-};
-
-export default HomePage;
+export default HomePage

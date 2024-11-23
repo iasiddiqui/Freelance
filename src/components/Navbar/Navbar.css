@@ -58,7 +58,7 @@ body {
 .icon:hover span,
 .icon:hover .icon-svg,
 .icon span:hover {
-    color: #0073b1;
+    color:rgb(14, 130, 246);
 }
 
 .icon span {
@@ -70,13 +70,14 @@ body {
 
 .icon-svg {
     font-size: 1.5rem;
-    color: #0073b1;
+    color: rgb(14, 130, 246);
+    /* color: #0073b1; */
     transition: color 0.3s ease;
 }
 
 .line-break{
     font-size: 2rem;
-    color: #0073b1;
+    color: rgb(14, 130, 246);
 }
 
 .right-section {
@@ -105,6 +106,10 @@ body {
     color: white;
     width: 5rem;
     padding: 0.3rem;
+    cursor: pointer;
+}
+.rate-now:hover{
+    opacity: 0.8;
 }
 
 /* .rate-now {
@@ -129,12 +134,17 @@ body {
 
 
 .contribute {
-    background-color:#0073b1;
+    background-color:rgb(14, 130, 246);
     border-radius: 10px;
     border: none;
     color: white;
     width: 6rem;
     padding: 0.5rem;
+    cursor: pointer;
+}
+.contribute:hover{
+    opacity: 0.8;
+
 }
 
 .join-now {
@@ -144,6 +154,7 @@ body {
     border: none;
     padding: 0.5rem;
     border-radius: 10px;
+    cursor: pointer;
     transition: color 0.3s ease-in;
 
     
@@ -156,10 +167,11 @@ body {
 
 .login {
     background-color: #fff;
-    color: #0073b1;
-    border: 1px solid #0073b1;
+    color: rgb(14, 130, 246);
+    border: 1px solid rgb(14, 130, 246);
     padding: 0.5rem;
     border-radius: 10px;
+    cursor: pointer;
     transition: color 0.3s ease-in;
 
 }
@@ -206,7 +218,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #0073b1;
+    color:rgb(14, 130, 246);
 }
 
 /* Optional: Add specific style for 'For Employers' link */
@@ -221,7 +233,7 @@ body {
   }
   
   .nav-links li:last-child a:hover {
-    color: #005f8d; 
+    color: rgb(14, 130, 246); 
   }
   
 
@@ -276,10 +288,10 @@ body {
     display: block;
   }
   
-  .dropdown-menu li a:hover {
+  /* .dropdown-menu li a:hover {
     background-color: #0073b1;
     color: #fff;
-  }
+  } */
   
   .dropdown:hover .arrow-icon {
     transform: rotate(180deg); 
