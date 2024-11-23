@@ -121,7 +121,9 @@ const Navbar = () => {
             </ul>
           </li>
           <button className="rate-now">Rate Now</button>
-        <span>For Employers</span>
+          <li>
+            <a href="#">For Employers</a>
+          </li>
         </ul>
       </div>
     </nav>
