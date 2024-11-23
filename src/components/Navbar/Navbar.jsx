@@ -4,20 +4,30 @@ import { IoMdPeople } from "react-icons/io";
 import { MdOndemandVideo } from "react-icons/md";
 import { IoBagRemove } from "react-icons/io5";
 import { AiFillBug } from "react-icons/ai";
+import { IoIosArrowDown } from "react-icons/io";
+
 import "./Navbar.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const toggleDropdown = (menu) => {
+    setDropdownOpen(dropdownOpen === menu ? null : menu);
+  };
+
   return (
     <nav className="navbar">
       <div className="top-row">
-        <div className="logo"><img src="/Logo.png" alt="Logo" />
-         </div>
+        <div className="logo">
+          <a href="/">
+            <img src="/Logo.png" alt="Logo" />
+          </a>
+        </div>
 
         <div className="icon-section">
           <div className="icon">
@@ -46,8 +56,10 @@ const Navbar = () => {
         </div>
 
         <div className="right-section">
-          {/* <button className="rate-now">Rate Now</button>
-          <button className="sign-in"> + Contribute</button> */}
+          <button className="contribute"> + Contribute</button>
+          <div className="line-break">
+            <span>|</span>
+          </div>
           <button className="join-now">Join Now</button>
           <button className="login">Login</button>
         </div>
@@ -66,25 +78,54 @@ const Navbar = () => {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Communities</a>
-          </li>
-          <li>
             <a href="#">Companies</a>
           </li>
-          <li>
-            <a href="#">Reviews</a>
+          <li className="dropdown">
+            <a href="#">Reviews <IoIosArrowDown/> </a>
+            <ul className="dropdown-menu">
+              <li>
+                <a href="#">Employee Reviews</a>
+              </li>
+              <li>
+                <a href="#">Company Ratings</a>
+              </li>
+            </ul>
+          </li>
+          <li className="dropdown">
+            <a href="#">Salaries <IoIosArrowDown/></a>
+            <ul className="dropdown-menu">
+              <li>
+                <a href="#">Software Engineer</a>
+              </li>
+              <li>
+                <a href="#">Data Scientist</a>
+              </li>
+            </ul>
+          </li>
+          <li className="dropdown">
+            <a href="#">Interviews <IoIosArrowDown/></a>
+            <ul className="dropdown-menu">
+              <li>
+                <a href="#">Common Questions</a>
+              </li>
+              <li>
+                <a href="#">Interview Experiences</a>
+              </li>
+            </ul>
           </li>
           <li>
-            <a href="#">Salaries</a>
+            <a href="#">Job</a>
           </li>
-          <li>
-            <a href="#">Interviews</a>
-          </li>
-          <li>
-            <a href="#">Jobs</a>
-          </li>
-          <li>
-            <a href="#">Awards</a>
+          <li className="dropdown">
+            <a href="#">Awards <IoIosArrowDown/></a>
+            <ul className="dropdown-menu">
+              <li>
+                <a href="#">Best Companies</a>
+              </li>
+              <li>
+                <a href="#">Top Startups</a>
+              </li>
+            </ul>
           </li>
           <button className="rate-now">Rate Now</button>
         </ul>

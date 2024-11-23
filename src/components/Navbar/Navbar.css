@@ -128,9 +128,13 @@ body {
 } */
 
 
-.sign-in {
-    background-color: #e1e1e1;
-    color: #333;
+.contribute {
+    background-color:#0073b1;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 6rem;
+    padding: 0.5rem;
 }
 
 .join-now {
@@ -194,6 +198,8 @@ body {
 }
 
 .nav-links a {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
     text-decoration: none;
     color: #333;
     font-size: 1rem;
@@ -202,6 +208,55 @@ body {
 .nav-links a:hover {
     color: #0073b1;
 }
+
+.nav-links a .dropdown-icon {
+    margin-left: 5px; /* Add spacing between text and icon */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon within its flex container */
+}
+/* Base styling for dropdown */
+.dropdown {
+    position: relative; 
+  }
+  .dropdown a svg{
+    color: #00000074;
+  }
+  
+  .dropdown-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    z-index: 1000;
+    min-width: 150px; 
+    list-style: none;
+    margin: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 0.5rem 1rem;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #0073b1;
+    color: #fff;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
 
 @media (max-width: 768px) {
     .second-row{
