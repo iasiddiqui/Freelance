@@ -4,22 +4,11 @@ import { IoMdPeople } from "react-icons/io";
 import { MdOndemandVideo } from "react-icons/md";
 import { IoBagRemove } from "react-icons/io5";
 import { AiFillBug } from "react-icons/ai";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(null);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const toggleDropdown = (menu) => {
-    setDropdownOpen(dropdownOpen === menu ? null : menu);
-  };
-
   return (
     <nav className="navbar">
       <div className="top-row">
@@ -56,7 +45,7 @@ const Navbar = () => {
         </div>
 
         <div className="right-section">
-          <button className="contribute"> + Contribute</button>
+          <button className="contribute">+ Contribute</button>
           <div className="line-break">
             <span>|</span>
           </div>
@@ -66,14 +55,10 @@ const Navbar = () => {
       </div>
 
       <div className="second-row">
-        <button
-          className="hamburger-menu"
-          onClick={toggleMenu}
-          aria-label="Toggle Menu"
-        >
+        <button className="hamburger-menu" aria-label="Toggle Menu">
           ☰
         </button>
-        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <ul className="nav-links">
           <li>
             <a href="#">Home</a>
           </li>
@@ -81,7 +66,9 @@ const Navbar = () => {
             <a href="#">Companies</a>
           </li>
           <li className="dropdown">
-            <a href="#">Reviews <IoIosArrowDown/> </a>
+            <a href="#">
+              Reviews <IoMdArrowDropdown className="arrow-icon" />
+            </a>
             <ul className="dropdown-menu">
               <li>
                 <a href="#">Employee Reviews</a>
@@ -92,7 +79,9 @@ const Navbar = () => {
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#">Salaries <IoIosArrowDown/></a>
+            <a href="#">
+              Salaries <IoMdArrowDropdown className="arrow-icon" />
+            </a>
             <ul className="dropdown-menu">
               <li>
                 <a href="#">Software Engineer</a>
@@ -103,7 +92,9 @@ const Navbar = () => {
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#">Interviews <IoIosArrowDown/></a>
+            <a href="#">
+              Interviews <IoMdArrowDropdown className="arrow-icon" />
+            </a>
             <ul className="dropdown-menu">
               <li>
                 <a href="#">Common Questions</a>
@@ -117,7 +108,9 @@ const Navbar = () => {
             <a href="#">Job</a>
           </li>
           <li className="dropdown">
-            <a href="#">Awards <IoIosArrowDown/></a>
+            <a href="#">
+              Awards <IoMdArrowDropdown className="arrow-icon" />
+            </a>
             <ul className="dropdown-menu">
               <li>
                 <a href="#">Best Companies</a>
