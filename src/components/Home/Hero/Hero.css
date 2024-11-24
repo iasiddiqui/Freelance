@@ -42,6 +42,7 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    
   }
   
   /* Card container */
@@ -55,18 +56,18 @@
   /* Card styling */
   .card-hero1 {
     /* background-color: rgba(14, 130, 246, 0.7); */
-    background: linear-gradient(180deg, rgb(79, 167, 255) 2.15%,rgba(79, 167, 255, 0.33) 95.89%);
+    background: linear-gradient(180deg, rgb(79, 167, 255) 2.15%,rgba(79, 167, 255, 0.182) 95.89%);
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
     max-width: 250px;
     color: white;
-    display: flex; /* Set the card to use flexbox */
-    flex-direction: column; /* Ensure items stack vertically */
-    justify-content: space-between; /* Ensure space between title, text, and button */
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
   }
   .card1 {
-    background: linear-gradient(180deg, rgb(79, 167, 255) 2.15%,rgba(79, 167, 255, 0.33) 95.89%);
+    background: linear-gradient(180deg, rgb(79, 167, 255) 2.15%,rgba(79, 167, 255, 0.182) 95.89%);
     /* padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
@@ -77,6 +78,8 @@
   .card-hero1 h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    
+    
   }
   
   .card-hero1 p {
@@ -97,10 +100,16 @@
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s;
-    margin: auto; /* Aligns the button to the right */
+    margin: auto; 
   }
   
   .card-hero1 button:hover {
-    color:  #F3747B;
-  }
+    background: linear-gradient(91.32deg, #fc03c6 2.15%, #ffdcdc 95.89%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+    /* text-fill-color: transparent;  */
+    transition: background 0.3s ease; 
+}
+
   

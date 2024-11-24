@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /* font-family: santoshi, sans-serif; */
+    font-family: santoshi, sans-serif;
 }
 
 .navbar {
@@ -211,7 +211,7 @@ body {
 .nav-links a {
     display: flex; 
     align-items: center; 
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
     color: #333;
     font-size: 0.9rem;
