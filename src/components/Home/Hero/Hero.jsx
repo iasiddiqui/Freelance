@@ -6,7 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const HomePage = () => {
   return (
     <div className="hero">
-      <h1>JOBBLISS</h1>
+      {/* <h1>JOBBLISS</h1> */}
       <div className="cards-container">
         {/* Discover Section */}
         <div className="card-hero1">
@@ -19,7 +19,7 @@ const HomePage = () => {
         </div>
 
         {/* Connect Section */}
-        <div className="card-hero1 card1">
+        <div className="card-hero1">
           <h3>Connect</h3>
           <p>
             Build your professional network and unlock new career possibilities
