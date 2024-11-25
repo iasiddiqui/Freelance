@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { RiArticleLine } from "react-icons/ri";
 import { IoMdPeople } from "react-icons/io";
 import { MdOndemandVideo } from "react-icons/md";
 import { IoBagRemove } from "react-icons/io5";
 import { AiFillBug } from "react-icons/ai";
-import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { Link, useNavigate } from "react-router-dom"; // Import Router components
 
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate(); // Hook to navigate programmatically
+
+  const handleLoginClick = () => {
+    navigate("/dashboard"); // Navigate to the dashboard on button click
+  };
+
   return (
     <nav className="navbar">
       <div className="top-row">
@@ -50,7 +57,9 @@ const Navbar = () => {
             <span>|</span>
           </div>
           <button className="join-now">Join Now</button>
-          <button className="login">Login</button>
+          <button className="login" onClick={handleLoginClick}>
+            Login
+          </button>
         </div>
       </div>
 
@@ -60,10 +69,10 @@ const Navbar = () => {
         </button>
         <ul className="nav-links">
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Companies</a>
+            <Link to="/companies">Companies</Link>
           </li>
           <li className="dropdown">
             <a href="#">
@@ -105,7 +114,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <a href="#">Job</a>
+            <Link to="/jobs">Job</Link>
           </li>
           <li className="dropdown">
             <a href="#">
@@ -122,7 +131,7 @@ const Navbar = () => {
           </li>
           <button className="rate-now">Rate Now</button>
           <li>
-            <a href="#">For Employers</a>
+            <Link to="/employers">For Employers</Link>
           </li>
         </ul>
       </div>
