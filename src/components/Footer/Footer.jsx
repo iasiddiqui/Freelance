@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Box component="footer" sx={{ bgcolor: 'background.paper', p: 6 }}>
       <Typography variant="h6" align="center" gutterBottom>
-      JOBBLISS
+        JOBBLISS
       </Typography>
       <Typography variant="subtitle1" align="center" color="text.secondary" component="p">
         © {new Date().getFullYear()} JOBBLISS All rights reserved.

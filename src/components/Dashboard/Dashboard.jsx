@@ -1,10 +1,11 @@
 import React from 'react'
+import DashboardNavbar from './Navbar/DashboardNav'
 
 function Dashboard() {
   return (
-    <div>
-      hii faiz
-    </div>
+    <>
+    <DashboardNavbar/>
+    </>
   )
 }
 

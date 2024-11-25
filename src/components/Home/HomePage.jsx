@@ -76,10 +76,12 @@
 import React from 'react'
 import Hero from './Hero/Hero'
 import Hero2 from './Hero2/Hero2'
+import Navbar from '../Navbar/Navbar'
 
 const HomePage = () => {
   return (
     <>
+    <Navbar />
     <Hero />
     <Hero2 />
     </>

@@ -5,14 +5,16 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './components/Home/HomePage';
 import Footer from './components/Footer/Footer';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element ={<Dashboard/>} />
         </Routes>
       </div>
       <Footer />
