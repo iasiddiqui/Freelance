@@ -54,7 +54,7 @@
   .searchbar-arrow-icon {
     font-size: 1rem;
     color: #858383;
-    margin-left: -3.5rem;
+    /* margin-left: -3.5rem; */
     padding-right: 0.5rem;
     transition: transform 0.3s ease; 
   }
