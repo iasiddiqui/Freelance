@@ -8,7 +8,7 @@ const Feed = () => {
       id: 1,
       author: "John Doe",
       role: "Software Engineer at TechCorp",
-      profilePicture: "https://via.placeholder.com/40",
+      profilePicture: "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740",
       content:
         "Excited to share that I've joined TechCorp as a Software Engineer! Looking forward to contributing to exciting projects.",
       time: "2h ago",
@@ -19,7 +19,7 @@ const Feed = () => {
       id: 2,
       author: "Jane Smith",
       role: "HR Specialist at CareerBuild",
-      profilePicture: "https://via.placeholder.com/40",
+      profilePicture: "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740",
       content:
         "We’re hiring! If you’re passionate about building great teams, check out our latest openings.",
       time: "5h ago",
@@ -30,7 +30,7 @@ const Feed = () => {
       id: 3,
       author: "Michael Johnson",
       role: "Product Manager at InnovateX",
-      profilePicture: "https://via.placeholder.com/40",
+      profilePicture: "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740",
       content:
         "Just finished a major project launch! Grateful for all the support from my team.",
       time: "1d ago",
@@ -41,7 +41,7 @@ const Feed = () => {
       id: 4,
       author: "Michael Johnson",
       role: "Product Manager at InnovateX",
-      profilePicture: "https://via.placeholder.com/40",
+      profilePicture: "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740",
       content:
         "Just finished a major project launch! Grateful for all the support from my team.",
       time: "1d ago",
@@ -52,7 +52,7 @@ const Feed = () => {
       id: 5,
       author: "Michael Johnson",
       role: "Product Manager at InnovateX",
-      profilePicture: "https://via.placeholder.com/40",
+      profilePicture: "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740",
       content:
         "Just finished a major project launch! Grateful for all the support from my team.",
       time: "1d ago",
@@ -65,7 +65,7 @@ const Feed = () => {
     <div className={styles.feedContainer}>
       <div className={styles.postInput}>
         <img
-          src="https://via.placeholder.com/40"
+          src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740"
           alt="Profile"
           className={styles.avatar}
         />

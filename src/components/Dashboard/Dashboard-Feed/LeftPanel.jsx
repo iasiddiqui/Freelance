@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./Styles/LeftPanel.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { FaDollarSign, FaBuilding, FaRocket, FaCommentDots } from "react-icons/fa"; // Logos for communities
-import { FaBookmark, FaUsers, FaNewspaper, FaCalendarAlt } from "react-icons/fa"; // Icons for new sections
-
+import {FaUsers, } from "react-icons/fa"; 
 const LeftPanel = () => {
   return (
     <div className={styles.leftPanel}>
