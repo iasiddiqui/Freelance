@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles/RightPanel.module.css";
+import styles from "./Styles/RightPanel.module.css";
 import { FaHashtag, FaUserFriends } from "react-icons/fa"; // Importing icons
 
 const RightPanel = () => {
