@@ -1,3 +1,52 @@
+/* Profile Dropdown Container */
+.profile-dropdown-container {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Profile Dropdown Menu */
+.profile-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-dropdown-container:hover .profile-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.profile-dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.profile-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
 .search-bar{
     margin-left: 5rem;
 }

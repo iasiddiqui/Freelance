@@ -13,7 +13,9 @@ import "./DashboardNav.css";
 
 const DashboardNavbar = () => {
   const [searchCategory, setSearchCategory] = useState("All");
-  const [isArrowRotated, setIsArrowRotated] = useState(false);  // State for rotating the arrow
+  const [isArrowRotated, setIsArrowRotated] = useState(false); 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
 
   const categories = [
     { value: "All", placeholder: "Search for anything..." },
@@ -51,7 +53,7 @@ const DashboardNavbar = () => {
               className="search-category"
               value={searchCategory}
               onChange={(e) => setSearchCategory(e.target.value)}
-              onClick={() => setIsArrowRotated(!isArrowRotated)}  
+              onClick={() => setIsArrowRotated(!isArrowRotated)}
             >
               {categories.map((category) => (
                 <option key={category.value} value={category.value}>
@@ -60,7 +62,9 @@ const DashboardNavbar = () => {
               ))}
             </select>
             <IoIosArrowDown
-              className={`searchbar-arrow-icon ${isArrowRotated ? "rotate" : ""}`}  
+              className={`searchbar-arrow-icon ${
+                isArrowRotated ? "rotate" : ""
+              }`}
             />
             <CiSearch className="search-icon" />
           </div>
@@ -97,12 +101,24 @@ const DashboardNavbar = () => {
           <div className="line-break">
             <span>|</span>
           </div>
-          <div className="icon icon-right">
-            <IoPersonCircleOutline className="icon-svg icon-right-svg " />
-          </div>
+          <div
+  className="icon icon-right profile-dropdown-container"
+  onMouseEnter={() => setIsDropdownOpen(true)}
+  onMouseLeave={() => setIsDropdownOpen(false)}
+>
+  <IoPersonCircleOutline className="icon-svg icon-right-svg" />
+  {isDropdownOpen && (
+    <div className="profile-dropdown-menu">
+      <a className="profile-dropdown-item" href="/profile">Profile</a>
+      <a className="profile-dropdown-item" href="/preferences">Manage Preferences</a>
+      <a className="profile-dropdown-item" href="/settings">Settings</a>
+      <a className="profile-dropdown-item" href="/logout">Logout</a>
+    </div>
+  )}
+</div>
+
         </div>
       </div>
-
 
       <div className="second-row">
         <button className="hamburger-menu" aria-label="Toggle Menu">
