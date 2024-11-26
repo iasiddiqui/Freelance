@@ -1,11 +1,15 @@
 import React from 'react'
-import DashboardNavbar from './Navbar/DashboardNav'
+import "./Dashboard.css";
+import DashboardNavbar from './Navbar/DashboardNav';
+import DashboardFeed from './Dashboard-Feed/DashboardFeed';
 
 function Dashboard() {
   return (
-    <>
-    <DashboardNavbar/>
-    </>
+
+    <div className="dashboard-main">
+    <DashboardNavbar />
+    <DashboardFeed/>
+    </div>
   )
 }
 

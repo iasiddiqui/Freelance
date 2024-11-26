@@ -1,0 +1,31 @@
+.dashboard {
+  display: flex;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+/* Make the left and right containers sticky */
+.leftContainer,
+.rightContainer {
+  flex: 0 0 20%;
+  position: sticky;
+  top: 0; /* Adjust as per your header height */
+  max-height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Scrollable when content exceeds height */
+}
+
+/* The feed section will scroll with the page */
+.feedContainer {
+  flex: 1;
+  background-color: #f3f2ef;
+}
+.panelCard {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}

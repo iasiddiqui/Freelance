@@ -1,0 +1,173 @@
+/* Left Panel Container */
+.leftPanel {
+  width: 25%; /* Adjust width */
+  /* background-color: #f5f7fa; */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 20px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* Panel Card Styling (for separating sections in boxes) */
+.panelCard {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on Panel Cards */
+.panelCard:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card */
+.profileCard {
+  text-align: center;
+}
+
+/* Avatar styling */
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.avatarIcon {
+  font-size: 4rem;
+  color: #0073b1;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  padding: 15px;
+}
+
+/* Profile name and title */
+.profileName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.profileTitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Panel Card Title */
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Trending List Styling */
+.trendingList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.trendingList li {
+  font-size: 1rem;
+  color: #0073b1;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.trendingList li:hover {
+  color: #0056b3;
+  padding-left: 10px;
+}
+
+/* Discover Communities List */
+.communitiesList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.communitiesList li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+}
+
+.communitiesList li:hover {
+  background-color: #f0f0f0;
+  /* padding-left: 10px; */
+}
+
+.communityIcon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #0073b1;
+}
+
+.communityTitle {
+  color: #555;
+  font-weight: bold;
+}
+
+.viewAll {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: #0073b1;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.viewAll:hover {
+  color: #0056b3;
+}
+
+/* New Sections - Saved Items, Groups, Newsletters, Events */
+.savedItemsList,
+.groupsList,
+.newslettersList,
+.eventsList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.savedItemsList li,
+.groupsList li,
+.newslettersList li,
+.eventsList li {
+  font-size: 1rem;
+  color: #555;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.savedItemsList li:hover,
+.groupsList li:hover,
+.newslettersList li:hover,
+.eventsList li:hover {
+  background-color: #f0f0f0;
+  /* padding-left: 10px; */
+}
+
+/* Icons for Groups */
+.groupIcon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #0073b1;
+}
+
+.groupTitle {
+  font-weight: bold;
+  color: #555;
+}
