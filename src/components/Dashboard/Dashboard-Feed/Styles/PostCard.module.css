@@ -1,23 +1,233 @@
+.postCard {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.postborder {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.authorAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.authorDetails {
+  flex: 1;
+}
+
+.authorName {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.authorRole {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.postContent {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.imageContainer iframe,
+.imageContainer video {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.timeStamp {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 10px 0;
+}
+.timeStamp {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 10px 0;
+}
+
+
 .postActions {
   display: flex;
-  justify-content: space-around; /* Evenly space the actions */
-  align-items: center; /* Vertically align icons and text */
-  margin-top: 15px;
-  padding: 10px 0;
-  border-top: 1px solid #ddd; /* Optional divider */
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .actionIcon {
   display: flex;
-  align-items: center; /* Align icon with text */
-  font-size: 1rem;
-  color: #0073b1; /* Primary color */
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #0073b1;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.2s ease;
-  gap: 5px; /* Space between text and icon */
+  transition: color 0.2s ease;
 }
 
 .actionIcon:hover {
-  color: #004182; /* Darker hover color */
-  transform: scale(1.1); /* Subtle scale on hover */
+  color: #005580;
+}
+.commentSection {
+  margin-top: 15px;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+}
+
+.submitComment {
+  background-color: #0073b1;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitComment:hover {
+  background-color: #005580;
+}
+
+.commentsList {
+  margin-top: 15px;
+}
+
+.comment {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.topComment {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.commentSection {
+  margin-top: 15px;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+}
+
+.submitComment {
+  background-color: #0073b1;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitComment:hover {
+  background-color: #005580;
+}
+
+.commentsList {
+  margin-top: 15px;
+}
+
+.comment {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.topComment {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.commentSection {
+  margin-top: 15px;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+}
+
+.submitComment {
+  background-color: #0073b1;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitComment:hover {
+  background-color: #005580;
+}
+
+.commentsList {
+  margin-top: 15px;
+}
+
+.comment {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.topComment {
+  margin-bottom: 10px;
+  font-weight: bold;
 }
