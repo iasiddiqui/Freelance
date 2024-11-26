@@ -16,7 +16,7 @@ const PostCard = ({ post }) => {
   const handleCommentSubmit = () => {
     if (commentText.trim()) {
       setComments([...comments, commentText]);
-      setCommentText(""); // Clear input after submission
+      setCommentText(""); 
     }
   };
 
