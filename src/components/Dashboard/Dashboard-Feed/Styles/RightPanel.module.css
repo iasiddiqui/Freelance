@@ -61,8 +61,8 @@
 }
 
 .trendingList li:hover {
-  color: #0056b3;
-  /* padding-left: 10px; */
+  color: #5facff;
+  padding-left: 5px;
 }
 
 /* People You May Know List */

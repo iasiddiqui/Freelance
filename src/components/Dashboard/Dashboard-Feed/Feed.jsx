@@ -6,19 +6,19 @@ const Feed = () => {
   const posts = [
     {
       id: 1,
-      author: "John Doe",
-      role: "Software Engineer at TechCorp",
+      author: "Ishan Ahmad Siddiqui",
+      role: "Software Engineer at IQ",
       profilePicture: "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740",
       content:
-        "Excited to share that I've joined TechCorp as a Software Engineer! Looking forward to contributing to exciting projects.",
+        "Excited to share that I've joined IQ as a Software Engineer! Looking forward to contributing to exciting projects.",
       time: "2h ago",
       image: "https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?t=st=1732638316~exp=1732641916~hmac=a106a5461185cd7303072bc67db909a903a7a569b6c22f997851a40c281431e5&w=900", 
       video: null, 
     },
     {
       id: 2,
-      author: "Jane Smith",
-      role: "HR Specialist at CareerBuild",
+      author: "Faizur Rahman",
+      role: "Full stack Developer",
       profilePicture: "https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?t=st=1732641836~exp=1732645436~hmac=03d2a2943cefb2c845e228803d4d05cb907bbeafb2603f7b599a78aad27c3ec2&w=740",
       content:
         "We’re hiring! If you’re passionate about building great teams, check out our latest openings.",
