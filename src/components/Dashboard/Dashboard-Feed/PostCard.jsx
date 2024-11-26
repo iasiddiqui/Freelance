@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import styles from './Styles/Feed.module.css';
+import { SlLike } from "react-icons/sl";
+import { BiCommentDetail } from "react-icons/bi";
+import { FiShare2 } from "react-icons/fi";
+
+
+
 
 const PostCard = ({ post }) => {
   const [comments, setComments] = useState([]);
@@ -62,9 +68,9 @@ const PostCard = ({ post }) => {
       <div className={styles.timeStamp}>{post.time}</div>
 
       <div className={styles.postActions}>
-        <span className={styles.actionIcon}>Like</span>
-        <span className={styles.actionIcon}>Comment</span>
-        <span className={styles.actionIcon}>Share</span>
+        <span className={styles.actionIcon}>Like <SlLike /> </span>
+        <span className={styles.actionIcon}>Comment<BiCommentDetail /></span>
+        <span className={styles.actionIcon}>Share<FiShare2 /></span>
       </div>
 
       {/* Comment Section */}

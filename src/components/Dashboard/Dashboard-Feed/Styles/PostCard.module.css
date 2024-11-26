@@ -1,85 +1,23 @@
-/* Post Card Container */
-.postCard {
-  background-color: #ffffff;
-  border: 1px solid #dcdcdc;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Media Container for Image and Video */
-.imageContainer {
-  width: 100%;  
+.postActions {
+  display: flex;
+  justify-content: space-around; /* Evenly space the actions */
+  align-items: center; /* Vertically align icons and text */
   margin-top: 15px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  height: 0;
-  padding-top: 56.25%; /* Aspect ratio 16:9 */
+  padding: 10px 0;
+  border-top: 1px solid #ddd; /* Optional divider */
 }
 
-/* For Image and Video inside the container */
-.imageContainer img,
-.imageContainer video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.commentSection {
-  margin-top: 20px;
-}
-
-.commentInput {
-  width: 100%;
-  padding: 8px;
+.actionIcon {
+  display: flex;
+  align-items: center; /* Align icon with text */
   font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  resize: none; /* Prevent resizing */
-  min-height: 50px;
-  box-sizing: border-box;
-}
-
-.submitComment {
-  background-color: #0a66c2;
-  color: white;
-  border: none;
-  padding: 10px;
+  color: #0073b1; /* Primary color */
   cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
-  width: 100%; /* Full width */
-  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  gap: 5px; /* Space between text and icon */
 }
 
-.submitComment:hover {
-  background-color: #004182;
-}
-
-.commentsList {
-  margin-top: 15px;
-}
-
-.comment {
-  background-color: #f7f7f7;
-  padding: 12px;
-  border-radius: 5px;
-  margin-bottom: 12px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.comment:hover {
-  background-color: #eaeaea;
-}
-
-.comment:before {
-  content: "• ";
-  color: #0a66c2;
+.actionIcon:hover {
+  color: #004182; /* Darker hover color */
+  transform: scale(1.1); /* Subtle scale on hover */
 }

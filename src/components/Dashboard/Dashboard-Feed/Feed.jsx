@@ -35,7 +35,7 @@ const Feed = () => {
         "Just finished a major project launch! Grateful for all the support from my team.",
       time: "1d ago",
       image: null,
-      video: null,
+      // video: "video.mp4",
     },
     {
       id: 4,

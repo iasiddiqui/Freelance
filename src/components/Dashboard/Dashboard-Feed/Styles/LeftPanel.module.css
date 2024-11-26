@@ -1,12 +1,9 @@
 /* Left Panel Container */
 .leftPanel {
   width: 30%; 
-  /* background-color: #f5f7fa; */
-  /* padding: 20px; */
   font-family: Arial, sans-serif;
   position: sticky;
   top: 20px;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   border-radius: 12px;
   margin-top: 20px;
 }
@@ -19,14 +16,13 @@
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
-/* Hover effect on Panel Cards */
-.panelCard:hover {
-  /* transform: translateY(-5px); */
+
+/* .panelCard:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Profile Card */
 .profileCard {
