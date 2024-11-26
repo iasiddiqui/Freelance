@@ -13,7 +13,7 @@ const LeftPanel = () => {
           <div className={styles.avatar}>
             <FaUserCircle className={styles.avatarIcon} />
           </div>
-          <h3 className={styles.profileName}>John Doe</h3>
+          <h3 className={styles.profileName}>Ishan</h3>
           <p className={styles.profileTitle}>Software Engineer</p>
         </div>
       </div>
