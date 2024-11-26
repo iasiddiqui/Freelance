@@ -12,6 +12,8 @@ const Feed = () => {
       content:
         "Excited to share that I've joined TechCorp as a Software Engineer! Looking forward to contributing to exciting projects.",
       time: "2h ago",
+      image: "https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?t=st=1732638316~exp=1732641916~hmac=a106a5461185cd7303072bc67db909a903a7a569b6c22f997851a40c281431e5&w=900", 
+      video: null, 
     },
     {
       id: 2,
@@ -21,6 +23,8 @@ const Feed = () => {
       content:
         "We’re hiring! If you’re passionate about building great teams, check out our latest openings.",
       time: "5h ago",
+      image: null, 
+      video: "https://www.youtube.com/watch?v=pGGSNZ5bJA4", 
     },
     {
       id: 3,
@@ -30,6 +34,30 @@ const Feed = () => {
       content:
         "Just finished a major project launch! Grateful for all the support from my team.",
       time: "1d ago",
+      image: null,
+      video: null,
+    },
+    {
+      id: 4,
+      author: "Michael Johnson",
+      role: "Product Manager at InnovateX",
+      profilePicture: "https://via.placeholder.com/40",
+      content:
+        "Just finished a major project launch! Grateful for all the support from my team.",
+      time: "1d ago",
+      image: null,
+      video: null,
+    },
+    {
+      id: 5,
+      author: "Michael Johnson",
+      role: "Product Manager at InnovateX",
+      profilePicture: "https://via.placeholder.com/40",
+      content:
+        "Just finished a major project launch! Grateful for all the support from my team.",
+      time: "1d ago",
+      image: null,
+      video: null,
     },
   ];
 
@@ -47,7 +75,7 @@ const Feed = () => {
           className={styles.inputBox}
         />
       </div>
-      
+
       {/* Media, Event, Write Article buttons */}
       <div className={styles.postOptions}>
         <button className={styles.optionButton}>Media</button>
