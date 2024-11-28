@@ -131,7 +131,7 @@ const Navbar = () => {
           </li>
           <button className="rate-now">Rate Now</button>
           <li>
-            <Link to="/employers">For Employers</Link>
+            <Link to="/employers">For Recruiter</Link>
           </li>
         </ul>
       </div>
