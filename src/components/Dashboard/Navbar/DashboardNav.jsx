@@ -13,9 +13,8 @@ import "./DashboardNav.css";
 
 const DashboardNavbar = () => {
   const [searchCategory, setSearchCategory] = useState("All");
-  const [isArrowRotated, setIsArrowRotated] = useState(false); 
+  const [isArrowRotated, setIsArrowRotated] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
 
   const categories = [
     { value: "All", placeholder: "Search for anything..." },
@@ -102,25 +101,32 @@ const DashboardNavbar = () => {
             <span>|</span>
           </div>
           <div
-  className="icon icon-right profile-dropdown-container"
-  onMouseEnter={() => setIsDropdownOpen(true)}
-  onMouseLeave={() => setIsDropdownOpen(false)}
->
-  <IoPersonCircleOutline className="icon-svg icon-right-svg" />
-  {isDropdownOpen && (
-    <div className="profile-dropdown-menu">
-      <a className="profile-dropdown-item" href="/profile">Profile</a>
-      <a className="profile-dropdown-item" href="/preferences">Manage Preferences</a>
-      <a className="profile-dropdown-item" href="/settings">Settings</a>
-      <a className="profile-dropdown-item" href="/logout">Logout</a>
-    </div>
-  )}
-</div>
-
+            className="icon icon-right profile-dropdown-container"
+            onMouseEnter={() => setIsDropdownOpen(true)}
+            onMouseLeave={() => setIsDropdownOpen(false)}
+          >
+            <IoPersonCircleOutline className="icon-svg icon-right-svg" />
+            {isDropdownOpen && (
+              <div className="profile-dropdown-menu">
+                <a className="profile-dropdown-item" href="/profile">
+                  Profile
+                </a>
+                <a className="profile-dropdown-item" href="/preferences">
+                  Manage Preferences
+                </a>
+                <a className="profile-dropdown-item" href="/settings">
+                  Settings
+                </a>
+                <a className="profile-dropdown-item" href="/logout">
+                  Logout
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
-      <div className="second-row">
+      {/* <div className="second-row">
         <button className="hamburger-menu" aria-label="Toggle Menu">
           ☰
         </button>
@@ -191,7 +197,7 @@ const DashboardNavbar = () => {
             <a href="#">For Employers</a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 };
