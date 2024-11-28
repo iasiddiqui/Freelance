@@ -68,9 +68,9 @@ const Navbar = () => {
           ☰
         </button>
         <ul className="nav-links">
-          <li>
+          {/* <li>
             <Link to="/">Home</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/companies">Companies</Link>
           </li>
